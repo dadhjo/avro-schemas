@@ -1,0 +1,16 @@
+{
+    "type": "record",
+    "name": "Device",
+    "namespace": "org.example",
+    "fields": [
+        {"name": "Name", "type": "string"},
+        {"name": "Serial",  "type": "string"},
+        {"name": "Info",
+         "type": {
+                    "type": "enum",
+                    "name": "Brand",
+                    "symbols": ["D-LINK", "3COM", "MOTOROLA"]
+                 }
+        }
+    ]
+}
